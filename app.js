@@ -9,6 +9,14 @@ const app = express();
 /*
 CONFIGURE APPLICATION MIDDLEWARE
 */
+const cors = require("cors");
+
+app.options(
+  "*",
+  cors({ origin: "http://localhost:3000", optionsSuccessStatus: 200 })
+);
+
+app.use(cors({ origin: "http://localhost:3000", optionsSuccessStatus: 200 }));
 const corsOptions = {
   origin: "*",
   credentials: true, //access-control-allow-credentials:true
