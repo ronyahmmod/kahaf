@@ -15,6 +15,7 @@ const DB = mongoose
     console.error(error);
   });
 // console.log(process.env.PORT);
+const port = process.env.PORT || 3006;
 const server = app.listen(process.env.PORT, () => {
   console.log(`SERVER IS RUNNING ON PORT: ${process.env.PORT}`);
 });
