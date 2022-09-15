@@ -1,0 +1,19 @@
+{
+  "name": "kahaf",
+  "version": "1.0.0",
+  "description": "This app is generally design for managing institution hevyload works of Schoo, College.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "ENG MD. RONY AHMMOD",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "mongoose": "^6.6.1",
+    "morgan": "^1.10.0"
+  }
+}
