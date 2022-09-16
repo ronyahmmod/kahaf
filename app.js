@@ -9,7 +9,6 @@ const app = express();
 /*
 CONFIGURE APPLICATION MIDDLEWARE
 */
-const cors = require("cors");
 
 app.options(
   "*",
