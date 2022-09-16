@@ -17,15 +17,10 @@ app.options(
 );
 
 app.use(cors({ origin: "http://localhost:3000", optionsSuccessStatus: 200 }));
-const corsOptions = {
-  origin: "*",
-  credentials: true, //access-control-allow-credentials:true
-  optionSuccessStatus: 200,
-};
+
 app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(cors(corsOptions));
 // ROUTES CONFIGURATION
 
 app.use("/api/v1/results", resultRouter);
